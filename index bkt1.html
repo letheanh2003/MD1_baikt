@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+    Tuổi Em
+</label>
+<label for="em"></label><input type="number" id="em">
+<button type="button" onclick="ShowAge()">Sudmid</button>
+<p id="ct"></p>
+<script>
+    function ShowAge(){
+        let em=document.getElementById("em").value
+        console.log(em)
+        let anh=parseInt(em)+3
+        console.log(anh)
+        let bo=anh*6
+        document.getElementById("ct").innerText="tuoi cua bo la "+bo+ " ,tuoi cua anh la " +anh
+    }
+</script>
+
+</body>
+</html>

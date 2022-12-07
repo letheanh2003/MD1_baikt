@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="namsinh" type="text">
+<button onclick="tinhNam()">Tính Năm</button><br>
+<b id="can">Kết Quả</b> <b id="chi"></b>
+<script>
+    function tinhNam () {
+        let a =+document.getElementById('namsinh').value
+        let can = a % 10
+        let chi = a % 12
+    switch (can) {
+        case 0:
+            document.getElementById('can').innerHTML = 'Canh'
+            break;
+        case 1:
+            document.getElementById('can').innerHTML = 'Thân'
+            break;
+        case 2:
+            document.getElementById('can').innerHTML = 'Nhâm'
+            break;
+        case 3:
+            document.getElementById('can').innerHTML = 'Quý'
+            break;
+        case 4:
+            document.getElementById('can').innerHTML = 'Giáp'
+            break;
+        case 5:
+            document.getElementById('can').innerHTML = 'Ất'
+            break;
+        case 6:
+            document.getElementById('can').innerHTML = 'Bính'
+            break;
+        case 7:
+            document.getElementById('can').innerHTML = 'Đinh'
+            break;
+        case 8:
+            document.getElementById('can').innerHTML = 'Mậu'
+            break;
+        case 9:
+            document.getElementById('can').innerHTML = 'Kỷ'
+            break;
+    }
+    switch (chi) {
+        case 0:
+            document.getElementById('chi').innerHTML = 'Thân'
+            break;
+        case 1:
+            document.getElementById('chi').innerHTML = 'Dậu'
+            break;
+        case 2:
+            document.getElementById('chi').innerHTML = 'Tuất'
+            break;
+        case 3:
+            document.getElementById('chi').innerHTML = 'Hợi'
+            break;
+        case 4:
+            document.getElementById('chi').innerHTML = 'Tý'
+            break;
+        case 5:
+            document.getElementById('chi').innerHTML = 'Sửu'
+            break;
+        case 6:
+            document.getElementById('chi').innerHTML = 'Dần'
+            break;
+        case 7:
+            document.getElementById('chi').innerHTML = 'Mão'
+            break;
+        case 8:
+            document.getElementById('chi').innerHTML = 'Thìn'
+            break;
+        case 9:
+            document.getElementById('chi').innerHTML = 'Tỵ'
+            break;
+        case 10:
+            document.getElementById('chi').innerHTML = 'Ngọ'
+            break;
+        case 11:
+            document.getElementById('chi').innerHTML = 'Mùi'
+            break;
+    }
+
+}
+ </script>
+</body>
+</html>

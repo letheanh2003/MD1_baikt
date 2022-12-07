@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let year= +prompt('Năm Sinh')
+  let can= year%10
+  let camName='';
+  console.log(typeof(can))
+  switch (can){
+    case 0:
+      console.log(can)
+      canName='Canh'
+      break;
+    case 1:
+      camName='Thân'
+      break;
+    case 2:
+      camName='Nhâm'
+      break;
+    case 3:
+      camName='Quý'
+      break;
+    case 4:
+      camName='Giáp'
+      break;
+    case 5:
+      camName='Ất'
+      break;
+    case 6:
+      camName='Bính'
+      break;
+    case 7:
+      camName='Đinh'
+      break;
+    case 8:
+      camName='Mậu'
+      break;
+    case 9:
+      camName='Kỉ'
+      break;
+  }
+
+  let chi = year%12
+  let chiName=''
+
+  switch (chi){
+    case 0:
+      chiName='Than'
+      break;
+    case 1:
+      chiName='Dau'
+      break;
+    case 2:
+      chiName='Tuat'
+      break;
+    case 3:
+      chiName='Hoi'
+      break;
+    case 4:
+      chiName='Ti'
+      break;
+    case 5:
+      chiName='Suu'
+      break;
+    case 6:
+      chiName='Dan'
+      break;
+    case 7:
+      chiName='Mao'
+      break;
+    case 8:
+      chiName='Thin'
+      break;
+    case 9:
+      chiName='Ty'
+      break;
+    case 10:
+      chiName='Ngo'
+      break;
+    case 11:
+      chiName='Mui'
+      break;
+  }
+  alert("nam "+year+" la "+camName +" "+chiName)
+</script>
+
+</body>
+</html>`
